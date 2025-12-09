@@ -1,6 +1,6 @@
 # Flambeau Hydropower Forecasting
 
-Short-term hydroelectric power generation forecasting for Dairyland Power Cooperative’s **Flambeau Station** using river gauge height and weather data. Built as part of a **Quantitative Analyst Intern technical interview exercise**.
+Short-term hydroelectric power generation forecasting for Dairyland Power Cooperative’s Flambeau Station using river gauge height and weather data. Built as part of a Quantitative Analyst Intern technical interview exercise.
 
 This project covers exploratory data analysis, feature relationships, model comparison, and a 7-day production forecast.
 

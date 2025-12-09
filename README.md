@@ -23,9 +23,6 @@ presentation/ Interview presentation + original problem statement
 
 ---
 
-
----
-
 ## Data
 
 - **Power Generation** – Historical MW output (2020–2025)

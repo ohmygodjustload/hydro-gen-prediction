@@ -9,6 +9,9 @@
 # Built Visual Studio Code Extensions
 *.vsix
 
+# env files
+*.env
+
 # Windows thumbnail cache files
 Thumbs.db
 Thumbs.db:encryptable

@@ -1,70 +1,255 @@
-# Flambeau Hydropower Forecasting
+<div id="top">
 
-Short-term hydroelectric power generation forecasting for Dairyland Power Cooperative’s Flambeau Station using river gauge height and weather data. Built as part of a Quantitative Analyst Intern technical interview exercise.
+<!-- HEADER STYLE: CLASSIC -->
+<div align="center">
 
-This project covers exploratory data analysis, feature relationships, model comparison, and a 7-day production forecast.
+<img src="readmeai/assets/logos/purple.svg" width="30%" style="position: relative; top: 0; right: 0;" alt="Project Logo"/>
 
----
+# <code>❯ REPLACE-ME</code>
 
-## Objective
+<em></em>
 
-Predict daily power generation (MW) for **Oct 24–30, 2025** using:
-- Historical river gauge height
-- Historical weather conditions
-- Past Flambeau power output
+<!-- BADGES -->
+<!-- local repository, no metadata badges. -->
 
----
+<em>Built with the tools and technologies:</em>
 
-## Repository Structure
-data/ Raw historical and forecast datasets
-figures/ All generated plots and model visualizations
-notebooks/ Full end-to-end analysis and modeling notebook
-presentation/ Interview presentation + original problem statement
+
+</div>
+<br>
 
 ---
 
-## Data
+## Table of Contents
 
-- **Power Generation** – Historical MW output (2020–2025)
-- **Gauge Height** – River height with forecasted values
-- **Weather** – Temperature, precipitation, snowfall, snow depth
-
-Missing values were cleaned, standardized, and aligned on a shared time index.
-
----
-
-## Modeling Approach
-
-- Feature engineering from hydrology and weather variables
-- Model comparison:
-  - Linear Regression
-  - Random Forest Regression
-- Performance evaluated using predicted vs. actual scatter analysis
-- Feature importance extracted to quantify river height dominance
+- [Table of Contents](#table-of-contents)
+- [Overview](#overview)
+- [Features](#features)
+- [Project Structure](#project-structure)
+    - [Project Index](#project-index)
+- [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Testing](#testing)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
 ---
 
-## Key Findings
+## Overview
 
-- River gauge height is the dominant driver of power output
-- Clear nonlinear saturation behavior at higher water levels
-- Random Forest consistently outperformed linear regression at higher MW ranges
-- Forecasted output for late Oct 2025 remains within historical seasonal norms
+
 
 ---
 
-## Tech Stack
+## Features
 
-- Python  
-- Pandas, NumPy  
-- Scikit-learn  
-- Matplotlib / Seaborn  
-- Jupyter Notebook  
+<code>❯ REPLACE-ME</code>
 
 ---
 
-## Author
+## Project Structure
 
-**Andrew Peirce**
-Computer Science (Cybersecurity) – University of Wisconsin–La Crosse
-Music Performance Minor
+```sh
+└── /
+    ├── data
+    │   ├── flambeau_generation.xlsx
+    │   ├── gauge_height.xlsx
+    │   └── weather.xlsx
+    ├── figures
+    │   ├── avg_MW_by_month.png
+    │   ├── correlation_heatmap.png
+    │   ├── power_gen_over_time.png
+    │   ├── predicted_10.24-10.30.png
+    │   ├── predicted_and_river_height.png
+    │   ├── predicted_vs_actual.png
+    │   ├── river_height_vs_power_gen.png
+    │   └── variable_importance.png
+    ├── notebooks
+    │   └── dairyland_analysis.ipynb
+    └── presentation
+        ├── Intern_Interview_Problem.docx
+        └── Predicting Hydroelectric Power Generation at Flambeau Station.pptx
+```
+
+### Project Index
+
+<details open>
+	<summary><b><code>/</code></b></summary>
+	<!-- __root__ Submodule -->
+	<details>
+		<summary><b>__root__</b></summary>
+		<blockquote>
+			<div class='directory-path' style='padding: 8px 0; color: #666;'>
+				<code><b>⦿ __root__</b></code>
+			<table style='width: 100%; border-collapse: collapse;'>
+			<thead>
+				<tr style='background-color: #f8f9fa;'>
+					<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
+					<th style='text-align: left; padding: 8px;'>Summary</th>
+				</tr>
+			</thead>
+			</table>
+		</blockquote>
+	</details>
+	<!-- presentation Submodule -->
+	<details>
+		<summary><b>presentation</b></summary>
+		<blockquote>
+			<div class='directory-path' style='padding: 8px 0; color: #666;'>
+				<code><b>⦿ presentation</b></code>
+			<table style='width: 100%; border-collapse: collapse;'>
+			<thead>
+				<tr style='background-color: #f8f9fa;'>
+					<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
+					<th style='text-align: left; padding: 8px;'>Summary</th>
+				</tr>
+			</thead>
+				<tr style='border-bottom: 1px solid #eee;'>
+					<td style='padding: 8px;'><b><a href='/presentation/Predicting Hydroelectric Power Generation at Flambeau Station.pptx'>Predicting Hydroelectric Power Generation at Flambeau Station.pptx</a></b></td>
+					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+				</tr>
+			</table>
+		</blockquote>
+	</details>
+	<!-- notebooks Submodule -->
+	<details>
+		<summary><b>notebooks</b></summary>
+		<blockquote>
+			<div class='directory-path' style='padding: 8px 0; color: #666;'>
+				<code><b>⦿ notebooks</b></code>
+			<table style='width: 100%; border-collapse: collapse;'>
+			<thead>
+				<tr style='background-color: #f8f9fa;'>
+					<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
+					<th style='text-align: left; padding: 8px;'>Summary</th>
+				</tr>
+			</thead>
+				<tr style='border-bottom: 1px solid #eee;'>
+					<td style='padding: 8px;'><b><a href='/notebooks/dairyland_analysis.ipynb'>dairyland_analysis.ipynb</a></b></td>
+					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+				</tr>
+			</table>
+		</blockquote>
+	</details>
+</details>
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+This project requires the following dependencies:
+
+- **Programming Language:** unknown
+
+### Installation
+
+Build  from the source and intsall dependencies:
+
+1. **Clone the repository:**
+
+    ```sh
+    ❯ git clone ../
+    ```
+
+2. **Navigate to the project directory:**
+
+    ```sh
+    ❯ cd 
+    ```
+
+3. **Install the dependencies:**
+
+echo 'INSERT-INSTALL-COMMAND-HERE'
+
+### Usage
+
+Run the project with:
+
+echo 'INSERT-RUN-COMMAND-HERE'
+
+### Testing
+
+ uses the {__test_framework__} test framework. Run the test suite with:
+
+echo 'INSERT-TEST-COMMAND-HERE'
+
+---
+
+## Roadmap
+
+- [X] **`Task 1`**: <strike>Implement feature one.</strike>
+- [ ] **`Task 2`**: Implement feature two.
+- [ ] **`Task 3`**: Implement feature three.
+
+---
+
+## Contributing
+
+- **💬 [Join the Discussions](https://LOCAL///discussions)**: Share your insights, provide feedback, or ask questions.
+- **🐛 [Report Issues](https://LOCAL///issues)**: Submit bugs found or log feature requests for the `` project.
+- **💡 [Submit Pull Requests](https://LOCAL///blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
+
+<details closed>
+<summary>Contributing Guidelines</summary>
+
+1. **Fork the Repository**: Start by forking the project repository to your LOCAL account.
+2. **Clone Locally**: Clone the forked repository to your local machine using a git client.
+   ```sh
+   git clone ./
+   ```
+3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
+   ```sh
+   git checkout -b new-feature-x
+   ```
+4. **Make Your Changes**: Develop and test your changes locally.
+5. **Commit Your Changes**: Commit with a clear message describing your updates.
+   ```sh
+   git commit -m 'Implemented new feature x.'
+   ```
+6. **Push to LOCAL**: Push the changes to your forked repository.
+   ```sh
+   git push origin new-feature-x
+   ```
+7. **Submit a Pull Request**: Create a PR against the original project repository. Clearly describe the changes and their motivations.
+8. **Review**: Once your PR is reviewed and approved, it will be merged into the main branch. Congratulations on your contribution!
+</details>
+
+<details closed>
+<summary>Contributor Graph</summary>
+<br>
+<p align="left">
+   <a href="https://LOCAL{///}graphs/contributors">
+      <img src="https://contrib.rocks/image?repo=/">
+   </a>
+</p>
+</details>
+
+---
+
+## License
+
+ is protected under the [LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
+
+---
+
+## Acknowledgments
+
+- Credit `contributors`, `inspiration`, `references`, etc.
+
+<div align="right">
+
+[![][back-to-top]](#top)
+
+</div>
+
+
+[back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square
+
+
+---
